@@ -29,14 +29,17 @@ If you want to determine the score of the word **hello** (case does not matter):
 curl -i http://localhost:8000/wordscore/hello
 ```
 ##### Successful Response:
-* **Code:** 200
-    **Content-Type:** `application/json`
-    **Content:** `{ "word" : "hello", "valid": true, "score": 8 }`
+* **Code:** 200<br/>
+  **Content-Type:** `application/json`<br/>
+  **Content:** `{ "word" : "hello", "valid": true, "score": 8 }`
+  
 OR
-* **Code:** 200
-    **Content-Type**: `application/json`
+
+* **Code:** 200<br/>
+    **Content-Type**: `application/json`<br/>
     **Content:** `{ "word" : <invalid_word>, "valid": false }`
+
 ##### Failed Response:
-* **Code:** 400
-* **Content-Type:** `application/json`
-    **Content:** `{ "error": "Not found, must be http://localhost:8000/wordscore/<word>" }`
+* **Code:** 400<br/>
+  **Content-Type:** `application/json`<br/>
+  **Content:** `{ "error": "Not found, must be http://localhost:8000/wordscore/<word>" }`
